@@ -1,91 +1,78 @@
-Online Voting System (Academic Project – BCA 6th Semester)
+📝 Online Voting System (Academic Project – BCA 6th Semester)
 
 Author: Anilkumar Dave
 Program: Bachelor of Computer Application (BCA)
-Duration: 1 November 2014 – 31 December 2014 (≈ 2 months, part-time)
+Duration: 1 Nov 2014 – 31 Dec 2014 (≈ 2 months, part-time)
 Academic Year: 6th Semester
 Institution: Shree S. V. Patel College of Computer Science & Business Management, Gujarat, India
 University: Veer Narmad South Gujarat University
 Mentor: Professor Dr. Ronal Vadiwala
 
-Overview
+🚀 Overview
 
-This repository contains a reconstructed version of my 6th-semester academic project, rebuilt for portfolio and educational purposes. The original project was submitted as a mini-project during my BCA program.
+This project simulates an online voting system for educational and portfolio purposes. It includes:
 
-All data used in this project (users, candidates, votes, parties) are fictitious and intended solely for demonstration and testing.
+User registration & login: Voter and admin roles
 
-The project simulates an online voting system with the following key modules:
+Candidate & party management: Admin can add/edit/delete
 
-User registration and login (voter and admin roles)
+Voting system: One vote per user
 
-Candidate and party management (admin)
+Election results: Real-time calculation and display
 
-Voting system with one vote per user
-
-Election result calculation and display
-
-Charts and statistics for each constituency, district, and overall votes
+Visualizations: Charts for constituency, district, and overall votes
 
 ⚙️ Modernisation Note
 
-Originally built: Aug–Sep 2014 (Academic project)
+Originally built: Aug–Sep 2014
 
 Modernised & uploaded: Oct 2025
 
-Modern updates include:
+Updates:
 
 Improved login security using password_hash()
 
-Updated UI with responsive sidebar navigation
+Responsive sidebar navigation UI
 
-Added attendance and grades modules
+Added attendance & grades modules
 
-Cleaned and normalised MySQL schema
+Cleaned & normalised MySQL schema
 
-Updated for PHP 8.2 compatibility
+PHP 8.2 compatibility
 
-Objectives
-
-Build a functional online voting system for demonstration purposes.
-
-Implement admin and voter authentication with session management.
-
-Store and manage candidates, constituencies, districts, parties, and votes in MySQL.
-
-Generate real-time results, including overall leading party, district-wise, and constituency-wise results.
-
-Visualize results using charts (Chart.js).
-
-High-Level Methodology
-
-Database design: Relational structure with tables for users, candidates, votes, parties, districts, and constituencies.
-
-Backend: PHP + MySQL for CRUD operations and voting logic.
-
-Frontend: HTML, CSS, JavaScript, and Chart.js for result visualization.
-
-Result calculation: Overall party votes, district/constituency candidate votes, and percentages.
-
-System Features
+📂 Project Files
+File	Description
+index.php	User login page
+register.php	User registration page
+vote.php	Voting page
+result.php	Election results (overall, district, constituency)
+admin/index.php	Admin dashboard
+admin/add_candidate.php	Add candidate (admin)
+admin/edit_candidate.php	Edit candidate (admin)
+admin/delete_candidate.php	Delete candidate (admin)
+db.php	Database connection
+style.css	Shared CSS styles
+README.md	Project documentation
+🔎 Key Features
 Admin Panel
 
-Manage candidates (add, edit, delete)
+Candidate management (add/edit/delete)
 
-Manage parties, districts, constituencies
+Party, district, and constituency management
 
-View election results per district, constituency, and overall
+View election results (district/constituency/overall)
 
-Charts for votes per candidate and party
+Charts per candidate and party
 
 Voter Panel
 
-Registration and login
+Registration & login
 
 Cast vote (one vote per user)
 
-View overall results (after voting)
+View overall results
 
-Sample Data
+📊 Sample Data
 
 Parties: BJP, INC, AAP, Independent
 
@@ -93,146 +80,87 @@ Districts: Ahmedabad, Surat, Vadodara, Rajkot
 
 Constituencies: 8 sample constituencies
 
-Candidates: 15+ candidates across parties and constituencies
+Candidates: 15+ across parties & constituencies
 
 Users: Admin + 3 demo voters
 
-Votes: Sample votes pre-inserted for demonstration
+Votes: Pre-inserted for demonstration
 
-Project Files
+🧩 System Methodology
 
-index.php – User login
+Database: Relational tables for users, candidates, votes, parties, districts, constituencies
 
-register.php – User registration
+Backend: PHP + MySQL (CRUD & voting logic)
 
-vote.php – Voting page
+Frontend: HTML, CSS, JavaScript, Chart.js
 
-result.php – Election results (overall, district, constituency)
+Result calculation: Overall, district-wise, and constituency-wise percentages
 
-admin/index.php – Admin dashboard
+🛠️ Tech Stack
 
-admin/add_candidate.php – Add candidate (admin)
+PHP 8.2+
 
-admin/edit_candidate.php – Edit candidate (admin)
+MySQL / MariaDB
 
-admin/delete_candidate.php – Delete candidate (admin)
+HTML, CSS, JavaScript
 
-db.php – Database connection
+Chart.js
 
-style.css – Shared CSS styles
-
-README.md – Project documentation
-
-Disclaimer
-
-All database content is self-created for demo and testing purposes.
-
-This project is for educational/demo purposes only. Passwords are stored in plain text, and protections against CSRF, XSS, and SQL injection are minimal.
-
-Do not use this system for real elections.
-
-Advantages / Learning Outcomes
-
-Hands-on experience with PHP, MySQL, and JavaScript
-
-Implementation of role-based access (admin & voter)
-
-Real-time result calculation and visualization
-
-Understanding relational database design and foreign key constraints
-
-Limitations
+⚠️ Limitations
 
 No real-world voter authentication (e.g., ID verification)
 
-Limited to demo data; not suitable for real elections
+Only demo data, not suitable for real elections
 
-Security measures are basic for academic purposes
+Basic security: plaintext passwords, minimal CSRF/XSS protection
 
-Future Scope
+🔭 Future Scope
 
-Add email verification and OTP-based voter authentication
+Email verification & OTP-based voter authentication
 
-Implement responsive UI for mobile devices
+Responsive UI for mobile devices
 
-Add audit logs for votes
+Vote audit logs
 
-Enhance security with prepared statements and hashing (bcrypt)
+Stronger security (prepared statements, bcrypt)
 
-Deploy as a web application with live database
+Deploy as a live web application
 
-Timeline (1 Nov – 31 Dec 2014)
+📅 Timeline (1 Nov – 31 Dec 2014)
 Week	Tasks
-Week 1 (Nov 1–7)	Requirement gathering, database design
-Week 2 (Nov 8–14)	Setup MySQL, PHP environment
-Week 3 (Nov 15–21)	User registration & login functionality
-Week 4 (Nov 22–30)	Candidate, party, constituency CRUD operations
-Week 5 (Dec 1–7)	Voting logic & session management
-Week 6 (Dec 8–14)	Election result calculation & charts
-Week 7 (Dec 15–21)	Testing, debugging, sample data insertion
-Week 8 (Dec 22–31)	Final documentation, preparation, submission
-Conclusion
+Week 1	Requirement gathering, database design
+Week 2	Setup MySQL & PHP environment
+Week 3	User registration & login functionality
+Week 4	Candidate/party/constituency CRUD operations
+Week 5	Voting logic & session management
+Week 6	Election result calculation & charts
+Week 7	Testing, debugging, sample data insertion
+Week 8	Final documentation & submission
+🧠 Lessons Learned
 
-The Online Voting System demonstrates the design and implementation of a simple, secure, and functional voting platform. It provides role-based access, real-time results, and a clear relational database structure, suitable for educational purposes. The modernised version ensures compatibility with current PHP versions and includes enhanced security and UI improvements.
+Hands-on experience with PHP, MySQL, and JavaScript
 
-Quick Setup – Online Voting System
-Requirements
+Role-based access implementation (admin & voter)
 
-Web Server: XAMPP, WAMP, or LAMP (PHP ≥ 7.0, MySQL/MariaDB)
+Real-time results & data visualization
 
-Browser: Chrome, Firefox, Edge, etc.
+Understanding relational database design and foreign key constraints
 
-Code Editor: VS Code, Sublime Text, PHPStorm
+🚀 Quickstart
+# Clone repo
+git clone https://github.com/AnilkumarDave/Online_Voting_System.git
+cd Online_Voting_System
 
-1. Clone Repository
-git clone https://github.com/yourusername/online-voting-system.git
-cd online-voting-system
+# Open in XAMPP/WAMP
+# Import database.sql via phpMyAdmin
 
-2. Database Setup
-
-Open phpMyAdmin (or any MySQL client).
-
-Create a database:
-
-CREATE DATABASE online_voting_system;
-
-
-Import database.sql from the repository to create tables and sample data.
-
-Update db.php if your DB credentials differ:
-
+# Update db.php if credentials differ
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "online_voting_system";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-3. Configure Admin User
-
-Default admin credentials:
-
-Username: admin
-
-Password: admin123
-
-Admin role is set as admin in the users table.
-
-Additional users or voters can be added via SQL or registration form.
-
-4. Launch Project
-
-Start Apache and MySQL in XAMPP/WAMP.
-
-Place the project folder in htdocs (XAMPP) or www (WAMP).
-
-Open browser and visit:
-
-http://localhost/online-voting-system/index.php
-
-Notes
-
-Charts: Uses Chart.js for vote visualization.
-
-Data: All sample users, candidates, votes are self-created for demo purposes.
-
-Security: This project is for educational/demo purposes only.
+# Start Apache & MySQL
+# Visit in browser
+http://localhost/Online_Voting_System/index.php
