@@ -136,7 +136,6 @@ In **October 2025**, the project was modernised for **PHP 8.2** and updated data
 
 ## 🚀 Quick Setup
 ```bash
->>>>>>> ef3823d (Update README.md with GitHub-ready format and modernisation note)
 # Clone repository
 git clone https://github.com/AnilkumarDave/Online_Voting_System.git
 cd Online_Voting_System
